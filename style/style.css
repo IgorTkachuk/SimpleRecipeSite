@@ -100,6 +100,7 @@ header {
 
 .core {
     display: block;
+    position: relative;
     border-radius: 24px;
     max-width: 736px;
     margin-left: auto;
@@ -261,7 +262,7 @@ h1 {
             }
 
             td:first-child {
-                width: 336px;
+                width: 50%;
                 padding-left: 32px;
                 padding-right: 16px;
             }
@@ -279,5 +280,43 @@ h1 {
             border-top: 1px solid var(--stone-150);
         }
         
+    }
+}
+
+@media(max-width: 768px){
+    h1 {
+        font-size: 36px;
+    }
+
+    .core {
+        max-width: 616px;
+    }
+
+    img.omelette {
+        width: 535px;
+        height: 300px;
+    }
+}
+
+@media(max-width: 375px) {
+    body {
+        padding: 0;
+    }
+
+    .core {
+        padding: 32px;
+        padding: 0px 32px 32px 32px;
+        border-radius: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    img.omelette {
+        width: 375px;
+        height: 171px;
+        border-radius: 0;
+        position: relative;
+        top: 0px;
+        left: -32px;
     }
 }
