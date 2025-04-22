@@ -235,3 +235,49 @@ h1 {
         color: var(--brown-800);
     }
 }
+
+.nutrition {
+    color: var(--stone-600);
+
+    h2 {
+        color: var(--brown-800);
+        margin-block-end: 24px;
+
+    }
+
+    p {
+        margin-block-end: 24px;
+    }
+
+    table {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+
+        tr {
+            td {
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+
+            td:first-child {
+                width: 336px;
+                padding-left: 32px;
+                padding-right: 16px;
+            }
+            
+            td:nth-child(2){
+                color: var(--brown-800);
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: 0px;
+            }
+        }
+
+        tr:nth-child(n+2){
+            border-top: 1px solid var(--stone-150);
+        }
+        
+    }
+}
